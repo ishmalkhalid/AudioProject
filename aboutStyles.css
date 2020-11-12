@@ -145,15 +145,14 @@ nav label a:hover{
   background-color: black;
 }
 
-
 .landingpage {
     background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(househ.jpg);
     background-size: cover;
     height:100vh;
     width: 100%;
     color: whitesmoke;
-    padding-bottom: 50px;
-    min-width: 1410px;
+    padding-bottom: 500px;
+/*    min-width: 1410px;*/
 }
 
 .landingtxt {
@@ -165,17 +164,20 @@ nav label a:hover{
 }
 
 .abouttxt {
-    height: 100vh;
+    height: 80vh;
     background-color: rgba(0,0,0,0.5);
     margin: 0px 150px;
     border-radius: 15px;
+/*    padding-bottom: 700px;*/
 }
+
+
 
 /*TEXT OF THE QUESTIONS*/
 .question {
     text-align: center;
     font-size: 2em;
-    padding: 15px 0 0 0;
+    padding-top: 35px;
     color: whitesmoke;
 }
 
@@ -183,9 +185,118 @@ nav label a:hover{
 .answer {
     text-align: justify;
     font-size: 1.15em;
+/*        font-size: 20px;*/
+
     padding: 10px 280px 5px 280px;
     color: ghostwhite;
     line-height: 30px;
+}
+
+@media (max-width:1520px) {
+    
+    .question {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 35px;
+        color: whitesmoke;
+}
+    .answer {
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 10px 50px 5px 50px;
+    color: ghostwhite;
+    line-height: 30px;
+    }
+}
+
+@media (max-width:1047px) {
+    .abouttxt {
+    height: 80vh;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0px 100px;
+    border-radius: 15px;
+/*    padding-bottom: 700px;*/
+}
+
+    .question {
+    text-align: center;
+    font-size: 27px;
+    padding-top: 35px;
+        color: whitesmoke;
+}
+    .answer {
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 10px 50px 5px 50px;
+    color: ghostwhite;
+    line-height: 30px;
+    }
+}
+
+@media (max-width:935px) {
+    .abouttxt {
+    height: 80vh;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0px 50px;
+    border-radius: 15px;
+/*    padding-bottom: 700px;*/
+}
+
+    .question {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 35px;
+        color: whitesmoke;
+}
+    .answer {
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 10px 25px 5px 25px;
+    color: ghostwhite;
+    line-height: 30px;
+    }
+}
+
+@media (max-width:780px) {
+    .landingpage {
+    background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(househ.jpg);
+    background-size: cover;
+    height:130vh;
+    width: 100%;
+    color: whitesmoke;
+    padding-bottom: 500px;
+/*    min-width: 1410px;*/
+}
+    
+    .landingtxt {
+    color:white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+    
+    .abouttxt {
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0px 50px;
+    border-radius: 15px;
+/*    padding-bottom: 700px;*/
+}
+
+    .question {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+    color: whitesmoke;
+}
+    .answer {
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 10px 25px 5px 25px;
+    color: ghostwhite;
+    line-height: 30px;
+    }
 }
 
 /*FOOTER*/

@@ -341,7 +341,9 @@ i:hover{
 	text-align: center;
 	margin: auto;
 	padding-top: 30px;
+    min-width: 30%;
 }
+
 
 .footer-elements{
 	color: darkgrey;
@@ -359,8 +361,63 @@ i:hover{
     font-weight: normal;
     font-size: 14px;
 }
+@media (max-width:1350px){
+    .separator_content{
+      padding-top:0;
+/*
+      padding-right:100px;
+      padding-left:100px;
+*/
+    }
+    .sep_1 img{
+      width:130px;
+      position: relative;
+      right: 30px;
+    }
+    
+    .sep_2{
+    color: white;
+    opacity: 0.6;
+    padding:0;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    }
+    
+    .sep_3 img{
+      width:130px;
+      position: relative;
+      left: 30px;
 
+}
+    
+}
+@media (max-width:860px){
+    .separator{
+        height: 15vh;
+    }
+    .sep_1 img{
+      width:100px;
+      position: relative;
+      right: 30px;
+}
+    .sep_2{
+        color: white;
+        opacity: 0.6;
+        padding:0;
+        font-size: 14px;
+        text-align: center;
+        top: 40px;
+    }
+    
+    .sep_3 img{
+      width:100px;
+      position: relative;
+      left: 30px;
 
+}
+}
 #vid1Wrapper,#vid2Wrapper,#vid3Wrapper,#vid4Wrapper, #vid5Wrapper{
   background-image: url('blackbg.jpg'); /*change this image to some video thumbnail*/
   background-size: cover;
