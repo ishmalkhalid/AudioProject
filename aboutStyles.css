@@ -1,0 +1,220 @@
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(h.ttf);
+} */
+*{
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  list-style:none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+  padding:0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(h.ttf);
+  font-weight: 300;
+}
+#navbar{
+/*  position: fixed;*/
+  top: 0;
+  /* display: none; */
+  z-index: 1000;
+  width: 100%;
+}
+
+nav{
+  background: #03212c;
+/*    background: transparent;*/
+  height:90px;
+  width:100%;
+  font-family: myFirstFont;
+  font-weight: 600;
+
+}
+label.logo{
+  color:#8b5025;
+  font-size: 50px;
+  line-height: 90px;
+  padding: 0 100px;
+  /* font-weight: bold; */
+}
+
+nav ul{
+  float:right;
+  margin-right:100px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color:white;
+  font-size:18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform:uppercase;
+  font-weight: 600;
+}
+a.active{
+/*  background: rgba(0,0,0,0.3);*/
+  color: #5e86a0;
+  transition: .5s;
+}
+
+a:hover {
+    color: #98afbe;
+    transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width:952px){
+  label.logo{
+    font-size:30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1F201D;
+    top:80px;
+    left:-100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size:20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color:#8b5025;
+  }
+  object{
+    border: 2px solid black;
+  }
+  #check:checked ~ ul{
+    left:0;
+    /* top:80px; */
+    height:100vh;
+    bottom:0;
+  }
+}
+nav label img{
+  width: 200px;
+    padding-top: 13px;
+}
+nav label a{
+  text-decoration: none;
+}
+nav label a:hover{
+  text-decoration: none;
+  background-color: black;
+}
+
+
+.landingpage {
+    background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(househ.jpg);
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    color: whitesmoke;
+    padding-bottom: 50px;
+    min-width: 1410px;
+}
+
+.landingtxt {
+    color:white;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.abouttxt {
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0px 150px;
+    border-radius: 15px;
+}
+
+/*TEXT OF THE QUESTIONS*/
+.question {
+    text-align: center;
+    font-size: 2em;
+    padding: 15px 0 0 0;
+    color: whitesmoke;
+}
+
+/*TEXT OF THE ANSWERS*/
+.answer {
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 10px 280px 5px 280px;
+    color: ghostwhite;
+    line-height: 30px;
+}
+
+/*FOOTER*/
+.footer {
+	background-color: black;
+	height: 25vh;
+/*	min-width: 1440px;*/
+}
+/*CONTACT LOGOS*/
+.contactlogos {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.footer-elements{
+	color: darkgrey;
+	text-align: center;
+    text-decoration: none;
+}
+
+.footer-elements a{
+    text-decoration: none;
+    color: darkgrey;
+
+}
+.icontxt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
