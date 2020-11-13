@@ -15,11 +15,14 @@ body {
   padding:0;
 }
 
+/*USING DOWNLOADED FONT FILE*/
 @font-face {
   font-family: myFirstFont;
   src: url(h.ttf);
   font-weight: 300;
 }
+
+/*NAVIGAATION BAR*/
 #navbar{
 /*  position: fixed;*/
   top: 0;
@@ -37,6 +40,8 @@ nav{
   font-weight: 600;
 
 }
+
+/*LOGO*/
 label.logo{
   color:#8b5025;
   font-size: 50px;
@@ -75,6 +80,7 @@ a:hover {
     transition: .5s;
 }
 
+/*RESPONSIVE NAV BAR*/
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -151,7 +157,7 @@ nav label a:hover{
   background-color: black;
 }
 
-
+/*LANDING PAGE*/
 .landingpage {
     background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(forestscn.jpg);
     background-size: cover;
@@ -168,6 +174,8 @@ nav label a:hover{
     padding-bottom: 40px;
 }
 
+
+/*THE TWO TEAM IMAGES*/
 .images {
 /*    margin-top: -575px;*/
     display: flex;
@@ -183,7 +191,7 @@ nav label a:hover{
     width: 20%;
 }
 
-
+/*RESPONSIVE IMAGES*/
 @media (max-width: 1103px){
     .images {
 /*    margin-top: -575px;*/

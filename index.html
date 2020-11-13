@@ -1,3 +1,4 @@
+<!--HOME PAGE OF THE MISSING CHILD WEBSITE-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,8 @@
     <meta name="author" content="" />
 
     <title>THE MISSING CHILD</title>
-    <link rel="icon" href="images/icon-jp.png">
+    <link rel="icon" href="bghorror.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
     <!-- Font Awesome CSS -->
     <script src="https://kit.fontawesome.com/b58b7ae888.js" crossorigin="anonymous"></script>
@@ -19,7 +17,10 @@
     <!--Stylesheet-->
     <link rel = "stylesheet" type = "text/css" href = "indexStyle.css"/>
 </head>
+    
 <body>
+    
+<!--    NAVIGATION BAR-->
   <section>
     <div id="navbar" class = "navbar">
       <nav>
@@ -40,11 +41,15 @@
     </div>
   </section>
 
+    
+<!--    LANDING PAGE-->
   <section id="landing">
     <div id="landingText" class="">  THE <span class=" blinking">MISSING</span> CHILD</div>
     <div id="landingText2" class=" ml13">  Part I</div>
   </section>
 
+    
+<!--    SEPARATOR-->
   <section id="seperator">
     <div class="separator_content"   data-aos ="fade-up" data-aos-duration="1500">
       <div class="sep_1">
@@ -59,27 +64,27 @@
     </div>
   </section>
 
+    
+<!--    AUDIO STORY-->
   <section id="story">
-
-    <!-- <div class="playButton" id="playButton">
-      <i class="fas fa-play"></i>
-    </div> -->
-
     <div id="soundwave">
         <div id="audio-spectrum">
           <div id="button">
             <i id="btn-play" class="fas fa-play fa-2x"></i>
             <i id="btn-pause" class="fas fa-pause fa-2x"></i>
-            <i id="btn-stop" class="fas fa-stop fa-2x"></i>
+<!--            <i id="btn-stop" class="fas fa-stop fa-2x"></i>-->
           </div>
         </div>
     </div>
+      
+      
+<!--   SCRIPT FOR ADDING THE AUDIO WAVE   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
     <script type="text/javascript">
       var buttons = {
         play: document.getElementById("btn-play"),
         pause: document.getElementById("btn-pause"),
-        stop: document.getElementById("btn-stop"),
+//        stop: document.getElementById("btn-stop"),
       };
       var Spectrum = WaveSurfer.create({
         container: '#audio-spectrum',
@@ -89,7 +94,7 @@
       buttons.play.addEventListener("click", function(){
         Spectrum.play();
 
-        buttons.stop.disabled = false;
+//        buttons.stop.disabled = false;
         buttons.pause.disabled = false;
         buttons.play.disabled = false;
       }, false);
@@ -106,7 +111,7 @@
 
         buttons.pause.disabled = false;
         buttons.play.disabled = false;
-        buttons.stop.disabled = false;
+//        buttons.stop.disabled = false;
       }, false);
 
       Spectrum.on('ready', function(){
@@ -122,7 +127,7 @@
 
         buttons.pause.disabled = true;
         buttons.play.disabled = true;
-        buttons.stop.disabled = true;
+//        buttons.stop.disabled = true;
       });
 
       Spectrum.load('sounds/SoundProjectAudio.mp3');
@@ -133,6 +138,8 @@
       // });
     </script>
 
+      
+<!--      AUDIO STORY VIDEOS-->
     <div id="vid1Wrapper">
       <video src="videos/3.mp4" loop muted type="video/mp4" id="vid1"></video>
     </div>
@@ -165,8 +172,12 @@
       <video src="videos/blood.mp4" loop muted type="video/mp4" id="vid5"></video>
     </div> -->
 
+      
+<!--    THE MAIN AUDIO-->
     <audio id="myAudio" src="sounds/SoundProjectAudio.mp3" type="audio/mpeg"></audio>
   </section>
+    
+    
   <hr>
   <!--FOOTER-->
     <section class="footer">
@@ -193,7 +204,10 @@
             <div style="padding-top: 10px; font-size: 11px">COPYRIGHT &copy 1940 THE MISSING CHILD. All Rights Reserved.</div>
         </div>
     </section>
+    
 </body>
+    
+<!--    INCLUDING SCRIPTS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

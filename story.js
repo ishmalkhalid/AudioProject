@@ -1,3 +1,4 @@
+//DECLARING VARIABLES
 var navbar=document.getElementById('navbar');
 
 var vid1=document.getElementById('vid1');
@@ -18,6 +19,7 @@ var aud=document.getElementById('myAudio');
 var playButton=document.getElementById('btn-play');
 var pauseButton=document.getElementById('btn-pause');
 
+//PLAY BUTTON FUNCTION
 playButton.addEventListener("click",function(){
   // playButton.style.display="none";
   console.log('hello');
@@ -26,12 +28,14 @@ playButton.addEventListener("click",function(){
   // aud.volume=0;
 });
 
+//PAUSE BUTTON FUNCTION
 pauseButton.addEventListener("click",function(){
   vid1.pause();
   aud.pause();
   // aud.volume=0;
 })
 
+//CHANGING THE COLORS OF THE NAV BARS AND THE VIDEOS ACCORDING TO THE TIME FRAME OF THE AUDIO
 var timestamp=[];
 timestamp=[29,95,140,186];
 var visited=[];
@@ -64,37 +68,11 @@ aud.ontimeupdate = function(){
     navbar.style.backgroundColor=backgroundColors[1];
 
     visited[1]=true;
-    // vid2_wrapper.style.opacity=0;
-    // vid2.style.opacity=0;
-    // vid2.pause();
-    // vid2.currentTime=0;
-    //
-    // setTimeout(function() {
-    //   vid2.style.display='none';
-    //   vid2_wrapper.style.display='none';
-    //   vid3_wrapper.style.display='block';
-    //   vid3_wrapper.style.opacity=1;
-    //   vid3.style.opacity=1;
-    //   vid3.play();
-    // }, 200);
   }
   else if (Math.floor(aud.currentTime)==timestamp[2] && !visited[2]) {
     navbar.style.backgroundColor=backgroundColors[2];
 
     visited[2]=true;
-    // vid3_wrapper.style.opacity=0;
-    // vid3.style.opacity=0;
-    // vid3.pause();
-    // vid3.currentTime=0;
-    //
-    // setTimeout(function() {
-    //   vid3.style.display='none';
-    //   vid3_wrapper.style.display='none';
-    //   vid4_wrapper.style.display='block';
-    //   vid4_wrapper.style.opacity=1;
-    //   vid4.style.opacity=1;
-    //   vid4.play();
-    // }, 200);
   }
   else if (Math.floor(aud.currentTime)==timestamp[3] && !visited[3]) {
     navbar.style.backgroundColor=backgroundColors[3];

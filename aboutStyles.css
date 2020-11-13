@@ -15,11 +15,14 @@ body {
   padding:0;
 }
 
+/*USING DOWNLOADED FONT*/
 @font-face {
   font-family: myFirstFont;
   src: url(h.ttf);
   font-weight: 300;
 }
+
+/*NAVIGATION BAR*/
 #navbar{
 /*  position: fixed;*/
   top: 0;
@@ -37,6 +40,8 @@ nav{
   font-weight: 600;
 
 }
+
+/*LOGO*/
 label.logo{
   color:#8b5025;
   font-size: 50px;
@@ -75,6 +80,7 @@ a:hover {
     transition: .5s;
 }
 
+/*RESPOSIVE NAV BAR*/
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -151,6 +157,8 @@ nav label a:hover{
   background-color: black;
 }
 
+
+/*LANDING PAGE*/
 .landingpage {
     background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(househ.jpg);
     background-size: cover;
@@ -179,7 +187,7 @@ nav label a:hover{
 
 
 
-/*TEXT OF THE QUESTIONS*/
+/*TEXT OF THE TITLES*/
 .question {
     text-align: center;
     font-size: 2em;
@@ -198,6 +206,7 @@ nav label a:hover{
     line-height: 30px;
 }
 
+/*RESPONSIVIVE PAGE*/
 @media (max-width:1400px) {
     
     .question {

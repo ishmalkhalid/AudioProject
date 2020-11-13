@@ -15,11 +15,14 @@ body {
   padding:0;
 }
 
+/*USING FONT FILE*/
 @font-face {
   font-family: myFirstFont;
   src: url(h.ttf);
   font-weight: 300;
 }
+
+/*NAVIGATION BAR*/
 #navbar{
   position: fixed;
   top: 0;
@@ -37,6 +40,8 @@ nav{
   font-weight: 600;
 
 }
+
+/*LOGO*/
 label.logo{
   color:#8b5025;
   font-size: 50px;
@@ -45,6 +50,7 @@ label.logo{
   /* font-weight: bold; */
 }
 
+/*NAVIGATION LINKS*/
 nav ul{
   float:right;
   margin-right:100px;
@@ -74,6 +80,8 @@ a:hover {
     color: #c0ced8;
     transition: .5s;
 }
+
+/*RESPONSIVE NAV BAR*/
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -150,6 +158,8 @@ nav label a:hover{
   background-color: black;
 }
 
+
+/*LANDING PAGE*/
 #landing{
   background-image: url('bghorror.jpg');
   background-size: cover;
@@ -181,6 +191,7 @@ nav label a:hover{
    opacity: 80%;
 }
 
+/*BLINKING EFFECT*/
 .blinking{
     animation:blinkingText 1.2s infinite;
 }
@@ -197,6 +208,8 @@ nav label a:hover{
   font-size: 6em;
     font-weight: 900;
 }
+
+/*RESPONSIVE TEXT SIZE*/
 @media (max-width:952px){
   #landingText{
     font-size: 90px;
@@ -206,6 +219,7 @@ nav label a:hover{
   }
 }
 
+/*SEPARATOR*/
 #seperator{
   height: 30vh;
   width: 100%;
@@ -248,6 +262,7 @@ nav label a:hover{
 
 }
 
+/*AUDIO STORY SECTION*/
 #story{
   height: 100vh;
   width: 100%;
@@ -272,8 +287,8 @@ nav label a:hover{
   transform: scale(1.15);
   opacity: 0.9;
 }
-/*////////////////////////////*/
 
+/*SOUND WAVE*/
 #soundwave{
   width: 100%;
   /* margin-left: 18%; */
@@ -309,38 +324,14 @@ i:hover{
   opacity: 0.8;
 }
 
-/* #soundwave{
-
-  background-color: #1F201D;
-
-}
-
-#button{
-
-  color: white;
-  margin-left: 40%;
-}
-
-#button i{
-  margin: 2%;
-  cursor: pointer;
-}
-
-i:hover{
-  transform: scale(1.1);
-}
-
-#audio-spectrum{
-  background-color: black;
-  border-radius: 10px;
-  opacity: 0.8;
-} */
 /*FOOTER*/
 .footer {
 	background-color: black;
 	height: 24vh;
 /*	min-width: 1440px;*/
 }
+
+
 /*CONTACT LOGOS*/
 .contactlogos {
 	width: 50%;
@@ -366,13 +357,11 @@ i:hover{
     font-weight: normal;
     font-size: 14px;
 }
+
+/*RESPONSIVE SEPARATOR*/
 @media (max-width:1350px){
     .separator_content{
       padding-top:0;
-/*
-      padding-right:100px;
-      padding-left:100px;
-*/
     }
     .sep_1 img{
       width:130px;
@@ -423,6 +412,8 @@ i:hover{
 
 }
 }
+
+/*VIDEOS*/
 #vid1Wrapper,#vid2Wrapper,#vid3Wrapper,#vid4Wrapper, #vid5Wrapper{
   background-image: url('blackbg.jpg'); /*change this image to some video thumbnail*/
   background-size: cover;
