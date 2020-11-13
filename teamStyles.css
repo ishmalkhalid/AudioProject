@@ -119,10 +119,16 @@ a:hover {
   nav ul li a{
     font-size:20px;
   }
-  a:hover, a.active{
-    background: none;
-    color:#8b5025;
-  }
+a.active{
+/*  background: rgba(0,0,0,0.3);*/
+  color: #5e86a0;
+  transition: .5s;
+}
+
+a:hover {
+    color: #98afbe;
+    transition: .5s;
+}
   object{
     border: 2px solid black;
   }
@@ -159,25 +165,57 @@ nav label a:hover{
     font-size: 55px;
     text-align: center;
     padding-top: 30px;
-
-
+    padding-bottom: 40px;
 }
 
 .images {
-    margin-top: -575px;
+/*    margin-top: -575px;*/
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin-bottom: 80px;
+/*    margin-bottom: 80px;*/
 }
 .wanted {
-/*    background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85));*/
     width: 20%;
 }
 
 .missing {
-/*    background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85));*/
     width: 20%;
+}
+
+
+@media (max-width: 1103px){
+    .images {
+/*    margin-top: -575px;*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+/*    margin-bottom: 80px;*/
+}
+.wanted {
+    width: 30%;
+}
+
+.missing {
+    width: 30%;
+}
+}
+
+@media (max-width: 537px){
+    .images {
+/*    margin-top: -575px;*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+/*    margin-bottom: 80px;*/
+}
+.wanted {
+    width: 35%;
+}
+
+.missing {
+    width: 35%;
+}
 }
 
 /*FOOTER*/
@@ -210,3 +248,4 @@ nav label a:hover{
     font-weight: normal;
     font-size: 14px;
 }
+

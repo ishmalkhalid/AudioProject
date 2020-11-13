@@ -119,10 +119,16 @@ a:hover {
   nav ul li a{
     font-size:20px;
   }
-  a:hover, a.active{
-    background: none;
-    color:#8b5025;
-  }
+a.active{
+/*  background: rgba(0,0,0,0.3);*/
+  color: #5e86a0;
+  transition: .5s;
+}
+
+a:hover {
+    color: #98afbe;
+    transition: .5s;
+}
   object{
     border: 2px solid black;
   }
@@ -192,7 +198,7 @@ nav label a:hover{
     line-height: 30px;
 }
 
-@media (max-width:1520px) {
+@media (max-width:1400px) {
     
     .question {
     text-align: center;
@@ -261,7 +267,7 @@ nav label a:hover{
     .landingpage {
     background:linear-gradient(0deg, rgba(3,33,44, 0), rgba(3,33,44, 0.85)), url(househ.jpg);
     background-size: cover;
-    height:130vh;
+    height:135vh;
     width: 100%;
     color: whitesmoke;
     padding-bottom: 500px;

@@ -118,10 +118,16 @@ a:hover {
   nav ul li a{
     font-size:20px;
   }
-  a:hover, a.active{
-    background: none;
-    color:#8b5025;
-  }
+a.active{
+/*  background: rgba(0,0,0,0.3);*/
+  color: #5e86a0;
+  transition: .5s;
+}
+
+a:hover {
+    color: #98afbe;
+    transition: .5s;
+}
   object{
     border: 2px solid black;
   }
@@ -341,7 +347,6 @@ i:hover{
 	text-align: center;
 	margin: auto;
 	padding-top: 30px;
-    min-width: 30%;
 }
 
 
